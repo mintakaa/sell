@@ -6,5 +6,17 @@ spring:
     url: jdbc:mysql://192.168.230.166/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: false
+  jackson:
+    default-property-inclusion: non_null
 server:
   context-path: /sell
+
+
+##8-1 发起微信支付-上
+wechat:
+  mpAppId:  wx632446becccd4cff
+  mpAppSecret: 0d3f5c243b0c4356eb49ffa8a83e788a
+  mchId:
+  mchKey:
+  keyPath: /var/weixin_cert/h5.12
+  nottifyUrl: http://mythsell.s1.natapp.cc/sell/pay/notify

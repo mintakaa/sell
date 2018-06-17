@@ -30,12 +30,12 @@ public class OrderDetailRepositoryTest {
     public void saveTest(){
        OrderDetail orderDetail = new OrderDetail();
 
-       orderDetail.setDetailId("2332234324");
+       orderDetail.setDetailId("233266324");
        orderDetail.setOrderId("231133213");
-       orderDetail.setProductIcon("http://ddddd.com");
+       orderDetail.setProductIcon("http://dffdd.com");
        orderDetail.setProductId("67834782");
-       orderDetail.setProductName("老虎粥");
-       orderDetail.setProductPrice(new BigDecimal(5.5));
+       orderDetail.setProductName("猪脚饭");
+       orderDetail.setProductPrice(new BigDecimal(6.5));
        orderDetail.setProductQuantity(4);
 
        OrderDetail result = repository.save(orderDetail);
@@ -45,7 +45,7 @@ public class OrderDetailRepositoryTest {
 
     @Test
     public void findByOrderId() throws Exception {
-        List<OrderDetail> orderDetailList = repository.findByOrderId("231133213");
+        List<OrderDetail> orderDetailList = repository.findByOrderId("231132213");
         Assert.assertNotEquals(0,orderDetailList.size());
     }
 

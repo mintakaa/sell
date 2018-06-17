@@ -4,6 +4,7 @@ import com.imooc.dto.OrderDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+
 /**
  * @Author: wuguozhu.
  * @Desc:
@@ -13,7 +14,7 @@ public interface OrderService {
     /**
      * 创建订单*/
 
-    OrderDTO ctarte(OrderDTO orderDTO);
+    OrderDTO create(OrderDTO orderDTO);
 
     /**
      * 查询订单*/
